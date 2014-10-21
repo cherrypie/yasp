@@ -8,7 +8,7 @@ int main(void)
     {
         for(j = i > n ? i - n + 1 : 1; j < (i > m ? m : i); ++j)
         {
-            printf("[%d][%d] ", j, i - j);
+            printf("[%ud][%ud] ", j, i - j);
         }
         printf("\n");
     }

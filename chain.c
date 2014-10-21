@@ -1,5 +1,17 @@
 #include "frechet.h"
 
+double fmin(double a, double b)
+{
+  if(a < b)
+    return a;
+}
+
+double fmax(double a, double b)
+{
+  if(a < b)
+    return b;
+}
+
 uint8_t chainEpsRecogn(struct chain a, struct chain b, double eps,
                  uint8_t (*q)(struct point a, struct point b, double eps))
 /*
